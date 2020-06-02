@@ -32,13 +32,13 @@ Sub calcQQ()
             countCell = Application.Cells(xRow, xColumn + 1)
 
             If IsDate(dateCell) Then
-              If DateDiff("D", DateValue(dateCell), DateValue(Application.Cells(xRow, 4))) >= 0 & IsNumeric(countCell) Then
+              If DateDiff("D", DateValue(dateCell), DateValue(Application.Cells(xRow, 4))) >= 0 And IsNumeric(countCell) Then
                 activeTotal = activeTotal + countCell
               End If
-              If DateDiff("D", DateValue(dateCell), DateValue(Application.Cells(xRow, 4))) < 0 & IsNumeric(countCell) Then
+              If DateDiff("D", DateValue(dateCell), DateValue(Application.Cells(xRow, 4))) < 0 And IsNumeric(countCell) Then
                 unactiveTotal = unactiveTotal + countCell
               End If
-              If DateDiff("D", DateValue(dateCell), DateValue(Application.Cells(xRow, 7))) >= 0 & IsNumeric(countCell) Then
+              If DateDiff("D", DateValue(dateCell), DateValue(Application.Cells(xRow, 7))) >= 0 And IsNumeric(countCell) Then
                 offTotal = offTotal + countCell
               End If
             End If
