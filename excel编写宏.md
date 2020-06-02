@@ -8,7 +8,8 @@
 4. 如何比较两个单元格的日期大小：DateDiff("D", DateValue(Cells(row1, column1)), DateValue(row2, column2)) > 0
 5. xlUP xlDown 沿文档方向向上，向下，可以用来取 row 的最小最大值
 6. IsNumeric(value) 判断是否数字, IsDate(value) 判断是否日期
-7. 保存时需要选择文件为开启宏的文件，并制定后缀 .xlsm
+7. If 多个条件组合 使用 And 或者 Or，不建议使用 & |，判断有问题，没深究原因
+8. 保存时需要选择文件为开启宏的文件，并制定后缀 .xlsm
 
 
 ```vba
