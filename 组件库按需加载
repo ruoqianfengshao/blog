@@ -1,0 +1,8 @@
+babel-plugin-import 和 ts-import-plugin 都是将静态引入解析掉转换成 js 和 style 的单独 import
+
+三方库如果想要支持按需加载有几个点需要注意：
+
+1. package.json 中添加 sideEffects，注意只声明 es 和 lib 的样式文件
+2. js 中不要显式引用 style
+3. style 中组件样式的依赖需要单独声明
+4. 确保引用路径正确
